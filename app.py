@@ -15,7 +15,7 @@ def hello_world():
     return ''
 
 def init_db():
-    engine = create_engine('mysql+pymysql://root:Floppy9side@localhost:3306/PLNT')
+    engine = create_engine('mysql+pymysql://root:ffff@localhost:3306/PLNT')
     connection = engine.connect()
     result = connection.execute("select name from plant")
     for row in result:
